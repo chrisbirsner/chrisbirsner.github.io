@@ -27,36 +27,95 @@
         height: 100%;
       }
       .swiper-slide {
-        text-align: center;
         font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
+        background: white;
+        display: block;
       }
+      .center {
+        text-align: center;
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width:80%;
+      }
+      .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+      }
+      .video-container {
+        position:relative;
+        padding-bottom:56.25%;
+        padding-top:30px;
+        height:0;
+        overflow:hidden;
+      }
+      .video-container iframe {
+        position:absolute;
+        top:5%;
+        left:5%;
+        width:90%;
+        height:90%;
+      }
+
     </style>
   </head>
   <body>
+
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="https://media.giphy.com/media/l4EpjaLABbGtQubO8/giphy.gif"></img></div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
+
+
+        <div class="swiper-slide">
+          <div class="background" style="background-image:url('https://media.giphy.com/media/l4EpjaLABbGtQubO8/giphy.gif');">
+          </div>
+          <div class="center">
+            <h1 style="font-size:24pt; color:white;">...</h1>
+            <h2 style="font-size:14pt; color:white;">By Chris Birsner & Jessica Jahn</h2>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="center">
+            <img src="https://jinglebellrunpics.files.wordpress.com/2017/12/screen-shot-2017-12-05-at-11-26-04-am.png" width="100%">
+            <p>The Arthritis Foundation's Long Island Chapter hosted their tenth annual Jingle Bell Run to raise awareness for one of the most common disabilities in America. <a href="http://www.jbr.org/faf/home/default.asp?ievent=1173443" target="_blank">They raise over $50,000 for their services.</a></p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="center">
+            <img src="https://jinglebellrunpics.files.wordpress.com/2017/12/img_1352.jpg" width=100%>
+            <p>Runners weren't only getting into the holiday spirit. Many were there to raise awareness and support for family and friends who are suffering from the disease.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="center">
+            <p>What many people fail to realize is that arthritis affects infants and children as well.</p>
+            <img src="https://jinglebellrunpics.files.wordpress.com/2017/12/img_1355.jpg" width=100%>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="video-container">
+          </div>
+        </div>
+
+       <div class="swiper-slide">
+          <div class="center">
+            <p>Arthritis is an inflammation of the joints that causes pain, swelling, and stiffness. The pain isn't always constant as it comes and goes randomly. As of now, there is no cure.
+              <img src="https://jinglebellrunpics.files.wordpress.com/2017/12/img_9107.jpg?w=1100" width=100%></p></div></div>
+        <div class="swiper-slide">
+          <div class="center">
+            <p>Over 50 million adults are affected by arthrtis, according to the Arthrtis Foundation. That is one in every four individuals over the age of 18.</p></div></div>
         <div class="swiper-slide">Slide 8</div>
         <div class="swiper-slide">Slide 9</div>
         <div class="swiper-slide">Slide 10</div>
